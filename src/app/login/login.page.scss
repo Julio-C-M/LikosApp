@@ -1,0 +1,24 @@
+/*.center-span {
+    display: block;
+    text-align: center;
+}
+*/
+
+.img-logo {
+    display:block;
+    margin-top:25%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50vh;
+  }
+  .ion-icon{
+    position: absolute;
+    top: 37px;
+    z-index: 2;
+    font-size: 1.2rem;
+    left: 5px;
+  }
+  .text-danger {
+    color: #cf3c4f;
+  }
+  

@@ -1,0 +1,84 @@
+<ion-app>
+
+
+
+  <ion-header translucent>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button auto-hide="false"></ion-menu-button>
+      </ion-buttons>
+      <ion-buttons slot="primary">
+        <ion-button Href="/login" >
+          Ir al Login
+        </ion-button>
+      </ion-buttons>
+      <ion-title>Feed</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  
+  <ion-content fullscreen>
+
+    <ion-row>
+      <ion-col>
+        <ion-button 
+        routerLink="/tabs/inicio"
+       class="ion-margin-top" type="submit" expand="block" >Crear Anuncio</ion-button>
+      </ion-col>
+    </ion-row>
+    
+    <ion-card class="action-card">
+      <img class="header-img" src="/assets/icon/LogoLikosCaptura.png" />
+      <ion-card-header>
+        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+        <ion-card-title>Card Title</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        Here's a small text description for the card content. Nothing more, nothing less.
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <ion-button size="small">Action</ion-button>
+            </ion-col>
+            <ion-col>
+              <ion-button fill="clear">
+                <ion-icon slot="icon-only" ios="heart" md="heart-sharp"></ion-icon>
+              </ion-button>
+              <ion-button fill="clear">
+                <ion-icon slot="icon-only" ios="share" md="share-sharp"></ion-icon>
+              </ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card class="action-card">
+      <img class="header-img" src="/assets/icon/LogoLikosCaptura.png" />
+      <ion-card-header>
+        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+        <ion-card-title>Card Title</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        Here's a small text description for the card content. Nothing more, nothing less.
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <ion-button size="small">Action</ion-button>
+            </ion-col>
+            <ion-col>
+              <ion-button fill="clear">
+                <ion-icon slot="icon-only" ios="heart" md="heart-sharp"></ion-icon>
+              </ion-button>
+              <ion-button fill="clear">
+                <ion-icon slot="icon-only" ios="share" md="share-sharp"></ion-icon>
+              </ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card-content>
+    </ion-card>
+    
+  </ion-content>
+  
+  </ion-app>
