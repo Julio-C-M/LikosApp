@@ -23,7 +23,7 @@
       <ion-col>
         <ion-button 
         routerLink="/tabs/inicio"
-       class="ion-margin-top" type="submit" expand="block" >Crear Anuncio</ion-button>
+       class="ion-margin-top" type="submit" expand="block" color="danger" >Crear Publicacion</ion-button>
       </ion-col>
     </ion-row>
     
@@ -38,47 +38,82 @@
         <ion-grid>
           <ion-row>
             <ion-col>
-              <ion-button size="small">Action</ion-button>
-            </ion-col>
-            <ion-col>
               <ion-button fill="clear">
-                <ion-icon slot="icon-only" ios="heart" md="heart-sharp"></ion-icon>
+                <ion-icon slot="icon-only" ios="heart" md="chatbubble-ellipses-sharp"></ion-icon>
               </ion-button>
               <ion-button fill="clear">
-                <ion-icon slot="icon-only" ios="share" md="share-sharp"></ion-icon>
+                <ion-icon slot="icon-only" ios="heart" md="thumbs-up-sharp"></ion-icon>
               </ion-button>
             </ion-col>
+            
+            <ion-button fill="clear">
+              <ion-icon slot="icon-only"  name="trash-sharp"></ion-icon>
+            </ion-button>
+            
           </ion-row>
         </ion-grid>
       </ion-card-content>
     </ion-card>
 
-    <ion-card class="action-card">
-      <img class="header-img" src="/assets/icon/LogoLikosCaptura.png" />
-      <ion-card-header>
-        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-        <ion-card-title>Card Title</ion-card-title>
-      </ion-card-header>
+    
+    <ion-card class="coworker-card">
+      
       <ion-card-content>
-        Here's a small text description for the card content. Nothing more, nothing less.
-        <ion-grid>
-          <ion-row>
-            <ion-col>
-              <ion-button size="small">Action</ion-button>
-            </ion-col>
-            <ion-col>
-              <ion-button fill="clear">
-                <ion-icon slot="icon-only" ios="heart" md="heart-sharp"></ion-icon>
-              </ion-button>
-              <ion-button fill="clear">
-                <ion-icon slot="icon-only" ios="share" md="share-sharp"></ion-icon>
-              </ion-button>
-            </ion-col>
-          </ion-row>
-        </ion-grid>
+        <img src="/assets/icon/Imagen1.jpg" class="header-img"/>
+        <ion-list lines="none">
+          <ion-item>
+            <ion-avatar slot="start">
+              <img src="/assets/icon/Profile.png"/>
+            </ion-avatar>
+            <ion-label>
+              <h1>John Parks</h1>
+              <p>Co-worker</p>
+            </ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-icon name="call" slot="start"></ion-icon>
+            <ion-label>
+              <h2>(555) 418-5602</h2>
+              <p>Mobile phone</p>
+            </ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-icon name="mail" slot="start"></ion-icon>
+            <ion-label>
+              <h2>jparks@workmail.com</h2>
+              <p>Work email</p>
+            </ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-icon name="mail" slot="start"></ion-icon>
+            <ion-label>
+              <h2>john.parks92@email.com</h2>
+              <p>Personal email</p>
+            </ion-label>
+          </ion-item>
+        </ion-list>
       </ion-card-content>
     </ion-card>
     
   </ion-content>
+  <ion-fab horizontal="end" vertical="bottom" slot="fixed">
+    <ion-fab-button color="primary">
+      <ion-icon md="add" ios="chevron-up-circle-outline"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button color="light">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button color="light">
+        <ion-icon name="logo-twitter"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button color="light">
+        <ion-icon name="logo-vimeo"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button color="light">
+        <ion-icon name="logo-google"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
   
   </ion-app>
