@@ -4,45 +4,52 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content >
+<ion-content class="seccion-login">
   <img class="img-logo" src="assets/icon/LogoLikosCaptura.png" alt="">
   
-  <form autocomplete="off">
+  <div class="login-form ion-padding" >
    
-    <div class="form-input">
-      <ion-icon name="mail-outline"></ion-icon>
-    <ion-item lines="full">
-      <ion-label position="stacked">Correo electrónico <span class="text-danger">*</span></ion-label>
+    <div>
+      
+    <ion-item class="form-input" lines="inset">
+      <ion-icon slot="start" name="mail-outline"></ion-icon>
+      <ion-label position="floating">Correo electrónico <span class="text-danger">*</span></ion-label>
       <ion-input type="text" [(ngModel)]="email" name="email" required="true"></ion-input>
     </ion-item>
-  </div>
-    <ion-item lines="full">
-      <ion-label position="stacked">Contraseña <span class="text-danger">*</span></ion-label>
+   </div>
+    <ion-item class="form-input" lines="inset">
+      <ion-icon slot="start" name="lock-closed-outline"></ion-icon>
+      <ion-label position="floating">Contraseña <span class="text-danger">*</span></ion-label>
       <ion-input [(ngModel)]="password" type="password" name="password" required="true"></ion-input>
       
     </ion-item>
-    <ion-row>
-      <ion-col>
-        <ion-button 
-        routerLink="/tabs/inicio"
-       class="ion-margin-top" type="submit" (click)="onLogin(email, password)" expand="block" >Iniciar Sesion</ion-button>
-      </ion-col>
-    </ion-row>
-  </form>
-    <ion-row>
-      <ion-col>
-        <p class="ion-text-start">
-          <a routerLink="/forgot-password">¿Olvidaste tu contraseña? </a>
-        </p>
-      </ion-col>
-      <ion-row>
-        <ion-col>
-          <p class="ion-text-end">
-            <a routerLink="/register">Crea una cuenta </a>
-          </p>
-        </ion-col>
-      </ion-row>
-    </ion-row>
+    
+  </div>
+ <div class="action-button ion-padding">
+    
+      <ion-button 
+      routerLink="/tabs/inicio"
+      type="submit" (click)="onLogin(email, password)" expand="block" >Iniciar Sesion</ion-button>
+     
+
+     <p class="ion-text-center">
+      <a routerLink="/login/forgot-password">¿Olvidaste tu contraseña? </a>
+    </p>
+    <ion-item lines="none">
+      <p>Recordarme</p>
+      <ion-checkbox color="primary"  slot="start"></ion-checkbox>
+    </ion-item>    
+  </div>
+
+  <div class="action-button ion-padding">
+    
+    <ion-button 
+    routerLink="/login/register"
+    type="submit"  expand="block" >Registrarse</ion-button>
+     
+</div>
+  
+
 
     <!-- Login con google-->
     <!--<span class="center-span"> or </span>

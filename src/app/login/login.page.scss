@@ -1,24 +1,45 @@
-/*.center-span {
-    display: block;
-    text-align: center;
-}
-*/
 
-.img-logo {
-    display:block;
-    margin-top:25%;
+.seccion-login {
+  width: 100%;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  position: fixed;
+  margin: auto;
+
+  .img-logo {
+    display: block;
+    margin-top: 25%;
     margin-left: auto;
     margin-right: auto;
     max-width: 50vh;
   }
-  .ion-icon{
-    position: absolute;
-    top: 37px;
-    z-index: 2;
-    font-size: 1.2rem;
-    left: 5px;
+
+  .login-form {
+    .form-input {
+      position: relative;
+      margin-bottom: 10px;
+
+      ion-icon {
+        position: absolute;
+        top: 8px;
+        font-size: 1.2rem;
+        left: 20px;
+      }
+      ion-label {
+        position: absolute;
+        margin-left: 35px;
+        top: 3px;
+      }
+      ion-input {
+        --padding-start: 36px;
+        --padding-end: 36px;
+        --padding-top: 36px;
+        color: #7b7b7b;
+      }
+    }
   }
-  .text-danger {
+    .text-danger {
     color: #cf3c4f;
   }
-  
+}
