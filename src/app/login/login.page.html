@@ -5,6 +5,7 @@
 </ion-header>
 
 <ion-content class="seccion-login">
+  
   <img class="img-logo" src="assets/icon/LogoLikosCaptura.png" alt="">
   
   <div class="login-form ion-padding" >
@@ -25,41 +26,29 @@
     </ion-item>
     
   </div>
- <div class="action-button ion-padding">
+  <ion-item class="ion-padding-start" lines="none">
+    <p>Recordarme</p>
+    <ion-checkbox color="primary"  slot="start"></ion-checkbox>
+  </ion-item> 
+ <div class="action-button ">
     
-      <ion-button 
+      <ion-button class="login-button"
       routerLink="/tabs/inicio"
-      type="submit" (click)="onLogin(email, password)" expand="block" >Iniciar Sesion</ion-button>
+      type="submit"  expand="block" >Iniciar Sesion</ion-button>
      
 
      <p class="ion-text-center">
       <a routerLink="/login/forgot-password">¿Olvidaste tu contraseña? </a>
     </p>
-    <ion-item lines="none">
-      <p>Recordarme</p>
-      <ion-checkbox color="primary"  slot="start"></ion-checkbox>
-    </ion-item>    
+        
   </div>
 
-  <div class="action-button ion-padding">
+  <div class="action-button ">
     
     <ion-button 
     routerLink="/login/register"
-    type="submit"  expand="block" >Registrarse</ion-button>
+    type="submit" fill="outline" expand="block" >Registrarse</ion-button>
      
 </div>
-  
-
-
-    <!-- Login con google-->
-    <!--<span class="center-span"> or </span>
-    <ion-row>
-      <ion-col>
-        <ion-button type="submit" color="danger" (click)="onLoginGoogle()" expand="block"
-          >Login with Google
-        </ion-button>
-      </ion-col>
-    </ion-row>
-  -->
-  
+      
   </ion-content>

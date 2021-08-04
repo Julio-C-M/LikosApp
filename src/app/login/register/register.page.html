@@ -1,9 +1,58 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>register</ion-title>
+  <ion-toolbar color="primary">
+    <ion-title class="ion-text-center">Crea una cuenta</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="seccion-login">
+  <img class="img-logo" src="assets/icon/LogoLikosCaptura.png" alt="">
+  
+  <div class="login-form ion-padding" >
 
-</ion-content>
+    <div>      
+      <ion-item class="form-input" lines="inset">
+        <ion-icon slot="start" name="person-outline"></ion-icon>
+        <ion-label position="floating">Nombre Completo <span class="text-danger">*</span></ion-label>
+        <ion-input type="text" [(ngModel)]="text" name="text" required="true"></ion-input>
+      </ion-item>
+     </div>
+   
+    <div>      
+    <ion-item class="form-input" lines="inset">
+      <ion-icon slot="start" name="mail-outline"></ion-icon>
+      <ion-label position="floating">Correo electrónico <span class="text-danger">*</span></ion-label>
+      <ion-input type="text" [(ngModel)]="email" name="email" required="true"></ion-input>
+    </ion-item>
+   </div>
+
+   <div>
+    <ion-item class="form-input" lines="inset">
+      <ion-icon slot="start" name="lock-closed-outline"></ion-icon>
+      <ion-label position="floating">Contraseña <span class="text-danger">*</span></ion-label>
+      <ion-input [(ngModel)]="password" type="password" name="password" required="true"></ion-input> 
+    </ion-item>
+  </div>
+    
+  </div>
+ <div class="action-button ">
+    
+      <ion-button class="login-button"
+      routerLink="/tabs/inicio"
+      type="submit" (click)="onLogin(email, password)" expand="block" >Registrarme</ion-button>
+     
+
+     <p class="ion-text-center">
+      <a routerLink="/login">¿Ya tienes una cuenta? </a>
+    </p>
+      
+  </div>
+
+  <div class="action-button ">
+    
+    <ion-button 
+    routerLink="/login"
+    type="submit" fill="outline" expand="block" >Iniciar sesión</ion-button>
+     
+</div>
+      
+  </ion-content>

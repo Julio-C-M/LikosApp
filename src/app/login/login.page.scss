@@ -19,6 +19,7 @@
     .form-input {
       position: relative;
       margin-bottom: 10px;
+      --padding-end:22px;
 
       ion-icon {
         position: absolute;
@@ -38,6 +39,17 @@
         color: #7b7b7b;
       }
     }
+  }
+  .action-button{
+        ion-button{
+          -webkit-padding-start: 28px;
+          -webkit-padding-end: 28px;
+          margin: 0;
+        }
+        p{
+          margin-top: 8px;
+          margin-bottom: 8px;
+        }
   }
     .text-danger {
     color: #cf3c4f;
