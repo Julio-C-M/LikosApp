@@ -24,35 +24,35 @@ export class UbicacionPage implements OnInit{
   mapRef = null;
   infoWindowRef =null;
   markers: Marker[] = [
+    { 
+      lat: 19.43258398072677,
+      lng: -99.13120401631467,
+     
+      title: 'Guardia 1',
+      image: 'https://s3-ap-northeast-1.amazonaws.com/ojuz-attach/profile/images/GioChkhaidze',
+      text: 'Datos: '
+    },
     {
-      lat: 19.43461832689501,
-      lng: -99.13313595808788,
-      title: 'Catedral Metropolitana',
-      image: 'https://www.mexicodesconocido.com.mx/wp-content/uploads/2010/07/CIUDAD_DE_MEXICO_CATEDRAL_METROPOLITANA_IGmd.jpg',
+      lat: 19.433281332532,
+      lng: -99.13169773917852,      
+      title: 'Guardia 2',
+      image: 'https://s3-ap-northeast-1.amazonaws.com/ojuz-attach/profile/images/GioChkhaidze',
       text: 'Animi voluptatem, aliquid impedit ratione placeat necessitatibus quisquam molestiae obcaecati laudantium?'
     },
     {
- 
-      lat: 19.43554467652977,
-      lng: -99.14123393648872,
-      title: 'Palacio de Bellas Artes',
-      image: 'https://inba.gob.mx/multimedia/espacios-culturales/1/1-EC-BG-palacio_de_bellas_artes.jpg',
+       
+      lat: 19.431943802346694,
+      lng: -99.13172545082288,
+      title: 'Guardia 3',
+      image: 'https://s3-ap-northeast-1.amazonaws.com/ojuz-attach/profile/images/GioChkhaidze',
       text: 'Animi voluptatem, aliquid impedit ratione placeat necessitatibus quisquam molestiae obcaecati laudantium?'
     },
     {
- 
-      lat: 19.43279548483612,
-      lng: -99.13107690480726,
-      title: 'Palacio Nacional',
-      image: 'http://nebula.wsimg.com/240bedb79eccf9f31186e01f74b76653?AccessKeyId=0252591E84E38284F8E3&disposition=0&alloworigin=1',
-      text: 'Animi voluptatem, aliquid impedit ratione placeat necessitatibus quisquam molestiae obcaecati laudantium?'
-    },
-    {
- 
-      lat: 19.429704947367014,
-      lng: -99.13244584475623,
-      title: 'Museo de la Ciudad de México',
-      image: 'https://www.cultura.cdmx.gob.mx/storage/app/media/uploaded-files/mcm.png',
+       
+      lat: 19.431813910772743,
+      lng: -99.13062847067525,
+      title: 'Guardia 5',
+      image: 'https://s3-ap-northeast-1.amazonaws.com/ojuz-attach/profile/images/GioChkhaidze',
       text: 'Animi voluptatem, aliquid impedit ratione placeat necessitatibus quisquam molestiae obcaecati laudantium?'
     }
   ];
@@ -73,7 +73,7 @@ export class UbicacionPage implements OnInit{
     const mapEle: HTMLElement = document.getElementById('map');
     this.mapRef = new google.maps.Map(mapEle, {
       center: {lat: marker.lat, lng: marker.lng},
-      zoom: 15
+      zoom: 17
        
     });
     google.maps.event

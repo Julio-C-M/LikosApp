@@ -1,9 +1,77 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>configuracion</ion-title>
+<ion-header class="ion-text-center">
+  <ion-toolbar color="primary">
+    <ion-title >Configuracion</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-list class="ion-padding">
+    
+    <ion-item  class="item-opciones">
+      <ion-icon name="people"></ion-icon>
+      <ion-label>
+        <h3 >Agregar/Eliminar Usuario</h3>
+      </ion-label>
+    </ion-item>
 
+    <ion-item class="item-opciones">
+      <ion-icon name="alert"></ion-icon>
+      <ion-label>
+        <h3 >Errores reportados</h3>
+      </ion-label>
+    </ion-item>
+
+    <ion-item class="item-opciones">
+      <ion-icon name="body"></ion-icon>
+      <ion-label>
+        <h3 >Guardias reportados</h3>
+      </ion-label>
+    </ion-item>
+
+    <ion-item class="item-opciones">
+      <ion-icon name="bug"></ion-icon>
+      <ion-label>
+        <h3 >Reportar un error en la app</h3>
+      </ion-label>
+    </ion-item>
+
+    <ion-item class="item-opciones">
+      <ion-icon name="settings"></ion-icon>
+      <ion-label>
+        <h3 >Configuraciónes</h3>
+      </ion-label>
+    </ion-item>
+
+    
+    
+  </ion-list>
 </ion-content>
+
+<ion-footer >
+  <ion-toolbar>
+    <ion-title class="ion-text-center"color="danger">Boton de Pánico</ion-title>
+
+    <ion-label>
+    <p>Aviso: El botón de panico es solo en caso de emergencias.</p>
+    <p>El accionar este botón dará aviso a las autoridades cercanas, a los guardias y al personal de soporte.</p>
+      
+    </ion-label>
+  </ion-toolbar>
+  <ion-item-sliding id="item100">
+    <ion-item color="warning" href="#">
+      <ion-icon class="icono-slide"color="danger" name="arrow-forward-circle-sharp"></ion-icon>
+      <ion-label>
+        <h3 >Desliza el boton para activar</h3>
+      </ion-label>
+      
+    </ion-item>
+
+    <ion-item-options side="start">
+      <ion-item-option color="danger">
+        <ion-icon class="icono-slide" name="alert-circle-outline"></ion-icon>
+      </ion-item-option>
+    </ion-item-options>
+
+    
+  </ion-item-sliding>
+</ion-footer>

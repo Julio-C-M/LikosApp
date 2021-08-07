@@ -1,9 +1,39 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Notificacion</ion-title>
+<ion-header class="ion-text-center">
+  <ion-toolbar color="primary">
+    <ion-title>Notificaciones</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="ion-padding ion-text-justify">
+  <p>
+    Todas las notificaciones que usted reciba
+    se agrupan en este espacio.
+    De igual forma puede buscar directo las 
+    notificaciones, por ejemplo, por nombre.
+  </p>
+  <ion-searchbar placeholder="Buscar notificaciones"></ion-searchbar>
+
+  <ion-list>
+    <ion-item>
+      <ion-icon  name="notifications-circle"></ion-icon>
+      <ion-text>Oscar Morales creo una nueva notificacion</ion-text>
+      <ion-icon slot="end" name="trash"></ion-icon>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon  name="notifications-circle"></ion-icon>
+      <ion-text>Oscar Morales creo una nueva notificacion</ion-text>
+      <ion-icon slot="end" name="trash"></ion-icon>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon  name="notifications-circle"></ion-icon>
+      <ion-text>Oscar Morales creo una nueva notificacion</ion-text>
+      <ion-icon slot="end" name="trash"></ion-icon>
+    </ion-item>
+  </ion-list>
+
+    
+
 
 </ion-content>
